@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>proj-model</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="img/icon" href="freepik-export-202406220904203yfQ.png" >
+</head>
+<body>
+    <div class="icon">
+        <p class="name">VISITOR</p>
+    </div>
+
+    <hr class="lines">
+    
+    <div class="container">
+        <p><span class="textcolor">Indian Standard</span><span class="timecolor"> Timer.</span></p>
+    </div>
+    
+    <div class="context">
+        <p>In India, the time standard used is Indian Standard Time (IST), which is UTC+5:30.<br>Indian Standard Time is used throughout the country and is observed across all regions.</p>
+    </div>
+
+    <div class="navbar">
+        <ul >
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Condact</a></li>
+        </ul>
+    </div>
+    
+    <div>
+        <img class="imgdesign" src="freepik-export-202406220904203yfQ.png" alt="">
+    </div>
+    <div>
+        <p id="current-time"></p>
+        <script>
+            let time = document.getElementById("current-time");
+            setInterval(() =>{
+                let d = new Date();
+                time.innerHTML = d.toLocaleTimeString();
+            }, 1000)
+        </script>
+    <div class="credits" >
+        <p>Supported by <a id="link" href="@">VIGNESH</a></p>
+    </div>
+    
+</body>
+</html>
